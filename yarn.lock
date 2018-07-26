@@ -16,6 +16,10 @@
     esutils "^2.0.2"
     js-tokens "^3.0.0"
 
+"@rdfjs/data-model@^1.0.1":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@rdfjs/data-model/-/data-model-1.1.0.tgz#15d9c5b7b8166893696565aefb65bad95da3fd99"
+
 "@types/asynciterator@^1.1.1":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@types/asynciterator/-/asynciterator-1.1.1.tgz#21ae5e3729ab2e87d324a044b2cd6288226da7fc"
@@ -3470,6 +3474,12 @@ jest-message-util@^23.4.0:
 jest-mock@^23.2.0:
   version "23.2.0"
   resolved "https://registry.yarnpkg.com/jest-mock/-/jest-mock-23.2.0.tgz#ad1c60f29e8719d47c26e1138098b6d18b261134"
+
+jest-rdf@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/jest-rdf/-/jest-rdf-1.0.0.tgz#ba97ab0442670024a9bbcb39103f98e167a0fc8d"
+  dependencies:
+    rdf-string "^1.1.1"
 
 jest-regex-util@^23.3.0:
   version "23.3.0"
