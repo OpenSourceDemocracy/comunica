@@ -1,6 +1,7 @@
 {
   "@context": [
     "https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/components/context.jsonld",
+    "https://linkedsoftwaredependencies.org/bundles/npm/@comunica/logger-void/^1.0.0/components/context.jsonld",
     "https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-init/^1.0.0/components/context.jsonld"
   ],
   "@id": "npmd:@comunica/actor-init-sparql",
@@ -43,6 +44,14 @@
           "unique": true
         },
         {
+          "@id": "cais:logger",
+          "comment": "The logger of this actor.",
+          "range": "cc:Logger",
+          "default": { "@type": "LoggerVoid" },
+          "required": true,
+          "unique": true
+        },
+        {
           "@id": "cais:query",
           "comment": "A SPARQL query string",
           "unique": true
@@ -81,6 +90,10 @@
             {
               "keyRaw": "mediatorContextPreprocess",
               "value": "cais:mediatorContextPreprocess"
+            },
+            {
+              "keyRaw": "logger",
+              "value": "cais:logger"
             },
             {
               "keyRaw": "queryString",
